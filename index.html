@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazing PopUp</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+<button onclick="togglePopup()" id="openBtn">Subscribe</button>
+
+<div class="popup">
+  <i class="material-icons">check_circle</i>
+  <h2>Success !</h2>
+  <p>Congratulations you have successfully subscribed webpath</p>
+  <button onclick="togglePopup()">OK</button>
+</div>
+
+<script>
+  let popup = document.querySelector('.popup')
+  function togglePopup (){
+    popup.classList.toggle('show')
+  }
+</script>
+  </body>
+</html>
